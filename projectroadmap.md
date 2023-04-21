@@ -5,7 +5,7 @@
 - [X] Fork code to KSU IS DONE
 - [X] Clone files to Github Desktop and upload them to Visual Studio DONE
 - [X] Run the code DONE
-- [ ] Locate problems under 'Problems' tab
-- [ ] Analyze code in Visual Studio, leave comments for each problem
-- [ ] Work each problem and find a solution
-- [ ] Create power point slide to set expectation 
+- [X] Download CodeBeat and let it analyze code DONE
+- [X] Review suggested changes from CodeBeat DONE
+- [X] Make changes to code DONE
+- [ ] Begin working on presentation portion of project
