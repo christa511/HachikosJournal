@@ -74,4 +74,9 @@ compliments = [
 	"You’re the person that everyone wants on their team.",
 	"I always learn so much when I’m around you.",
 	"Is there anything you can’t do!?",
+	"You are so loved!",
+	"Your story matters.",
+	"The world is better because you're in it!",
+	"Have I told you how much I love you?",
+	"You are one of my favorite people!"
 ]
