@@ -29,7 +29,6 @@ class SharpButton(QPushButton):
 
         self.border_style = border_style
         self.border_color = primaryColor
-        self.pressed_border_color = "rgb(152, 208, 245)"
         self.border_width = border_width
         self.border_radius = border_radius
 
@@ -48,10 +47,6 @@ class SharpButton(QPushButton):
         self.styleSheet += "font-family: " + self.font_family + ";"
         self.styleSheet += "font-size: " + self.font_size + ";"
         self.styleSheet += "font-weight: " + self.font_weight + ";"
-        self.styleSheet += "}"
-
-        self.styleSheet += "QPushButton::pressed{"
-        self.styleSheet += "border-color: " + self.pressed_border_color + ";"
         self.styleSheet += "}"
 
         self.setStyleSheet(self.styleSheet)
