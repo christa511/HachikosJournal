@@ -11,16 +11,15 @@ def rgbIntToString(redInt, greenInt, blueInt):
     return "rgb(" + str(redInt) + ", " + str(greenInt) + ", " + str(blueInt) + ")"
 
 class SharpButton(QPushButton):
-    def __init__(self, primaryColor = "rgb(0, 179, 60)", secondaryColor = "rgb(204, 255, 221)", font_family = "Verdana", font_size = "13px", font_weight = "normal", border_style = "solid", border_width = "2px", border_radius = "0px"):
+    def __init__(self, primaryColor = "rgb(0, 179, 60)", font_family = "Verdana", font_size = "13px", font_weight = "normal", border_style = "solid", border_width = "2px", border_radius = "0px"):
         super().__init__()
         self.setCursor(QCursor(Qt.PointingHandCursor))
 
         self.primaryColor = primaryColor
-        self.secondaryColor = secondaryColor
         p1, p2, p3 = rgbStringToInt(self.primaryColor)
-        s1, s2, s3 = rgbStringToInt(self.secondaryColor)
+        s1, s2, s3 = rgbStringToInt(self.primaryColor)
         self.color = self.primaryColor
-        self.background_color = self.secondaryColor
+        self.background_color = self.primaryColor
         self.animation = QVariantAnimation(startValue = QColor(p1, p2, p3), endValue = QColor(s1, s2, s3), valueChanged = self.onHover, duration = 400)
 
         self.font_family = font_family
@@ -55,7 +54,7 @@ class SharpButton(QPushButton):
         if self.animation.direction() == QAbstractAnimation.Forward:
             self.color = self.primaryColor
         else:
-            self.color = self.secondaryColor
+            self.color = self.primaryColor
         self.background_color = color.name()
         self.renderStyleSheet()
 
