@@ -33,7 +33,7 @@ class Window(QMainWindow):
     def initUI(self):
         self.setGeometry(self.xPos, self.yPos, self.width, self.height)
         self.setFixedSize(self.width, self.height)
-        self.setWindowTitle("Hachiko's Journal")
+        self.setWindowTitle("Brain Buddy Journal")
 
         windowBG = "rgb(66, 133, 129)"
         selectedColor = "rgb(33, 82, 79)"
@@ -51,11 +51,11 @@ class Window(QMainWindow):
         journalFont = QFont("Century Gothic")
         self.journalEdit.setFont(journalFont)
         self.journalEdit.setStyleSheet("background-image: url(img/linedpaper.png); background-repeat: no-repeat; background-position: center; font-size: 24px;")
-        self.journalEdit.setText("Dear Hachiko,\n\n")
+        self.journalEdit.setText("Dear Brain Buddy,\n\n")
         self.journalLayout.addWidget(self.journalEdit, 0, 0, 1, 4)
 
         self.speechLabel = QLabel()
-        self.speechLabel.setText("\t    Hi! I'm Hachiko!")
+        self.speechLabel.setText("\t    Hi! I'm Brain Buddy!")
         self.speechLabel.setStyleSheet("background-image: url(img/speechbubble.png); background-repeat: no-repeat; font-size: 20px;")
         self.journalLayout.addWidget(self.speechLabel, 1, 0, 1, 3)
 
