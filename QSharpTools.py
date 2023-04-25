@@ -11,7 +11,7 @@ def rgbIntToString(redInt, greenInt, blueInt):
     return "rgb(" + str(redInt) + ", " + str(greenInt) + ", " + str(blueInt) + ")"
 
 class SharpButton(QPushButton):
-    def __init__(self, primaryColor = "rgb(0, 179, 60)", font_family = "Verdana", font_size = "13px", font_weight = "normal", border_style = "solid", border_width = "2px", border_radius = "0px"):
+    def __init__(self, primaryColor = "rgb(66, 133, 129)", font_family = "Verdana", font_size = "13px", font_weight = "normal", border_style = "solid", border_width = "2px", border_radius = "0px"):
         super().__init__()
         self.setCursor(QCursor(Qt.PointingHandCursor))
 
