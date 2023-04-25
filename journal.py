@@ -35,10 +35,10 @@ class Window(QMainWindow):
         self.setFixedSize(self.width, self.height)
         self.setWindowTitle("Hachiko's Journal")
 
-        windowBG = "rgb(0, 0, 77)"
-        selectedColor = "rgb(0, 0, 179)"
+        windowBG = "rgb(66, 133, 129)"
+        selectedColor = "rgb(33, 82, 79)"
         self.setStyleSheet(f"background-color: {windowBG}; font-size: 15px;")
-        colorBG = "rgb(152, 208, 245)"
+        colorBG = "rgb(143, 219, 215)"
         self.tabWidget = QTabWidget()
         self.tabWidget.setStyleSheet(f"QTabBar::tab:selected {{color: white; background-color: {colorBG};}};")
         self.journalTab = QWidget()
